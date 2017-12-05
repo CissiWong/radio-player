@@ -4,10 +4,14 @@ class Radio extends React.Component {
 
   render() {
     return (
-      <div style={{ backgroundColor: `#${this.props.color}` }}>
-        <div>{this.props.name}</div>
-        <img src={this.props.image} alt="" />
-        <audio controls src={this.props.audio} type="audio/mpeg" ><track kind="captions" /></audio>
+      <div className="radio-box" style={{ backgroundColor: `#${this.props.color}` }}>
+        <div className="radio-image">
+          <img src={this.props.image} alt="" />
+        </div>
+        <div className="audio-wrapper">
+          <div className="radio-name">{this.props.name}</div>
+          <audio controls src={this.props.audio} type="audio/mpeg" ><track kind="captions" /></audio>
+        </div>
       </div>
     )
   }

@@ -2,5 +2,45 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: 
+  box-sizing: border-box;
+}
+
+.radio-box {
+  display: flex;
+  height: 200px;
+  width: 500px;
+  margin: 100px auto 20px auto;
+}
+
+.radio-image {
+  border-right: 3px solid #fff;
+}
+
+.radio-name {
+  height: 100px;
+  width: 100px;
+  color: white;
+  font-size: 32px;
+}
+
+.audio-wrapper {
+  flex-direction: column;
+  align-content: center;
+  margin: 25px 0 0 30px;
+}
+
+audio {
+  width: 250px;
+  height: 10px;
+  margin-top: 25px;
+}
+
+
+img {
+  align-items: left;
+  justify-content: left;
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  margin: 0;
 }
